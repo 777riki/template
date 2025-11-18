@@ -1,7 +1,6 @@
 .hero-section {
     position: relative;
     height: 80vh;
-    min-height: 650px;
     background: url('/home/ristorante.jpg') center/cover no-repeat;
 }
 

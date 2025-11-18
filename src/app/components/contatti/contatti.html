@@ -1,1 +1,97 @@
-<p>contatti works!</p>
+<div class="container my-5 py-5">
+    <h1 class="text-center fw-bold">Contatti</h1>
+    <p class="text-center mb-4">Hai bisogno di informazioni o vuoi prenotare? Contattaci tramite i nostri canali!</p>
+
+
+
+    <!-- Form di contatto -->
+    <div class="container d-flex justify-content-center align-items-center mt-5 mb-4">
+
+        @if(showAlert) {
+        <div class="alert-overlay">
+            <div class="alert-box">
+                <p>{{ alertMessage }}</p>
+                <button (click)="closeAlert()">OK</button>
+            </div>
+        </div>
+        }
+
+        <div class="card shadow-lg border-0" style="max-width: 800px; width: 100%;">
+            <div class="card-body p-4">
+                <form (ngSubmit)="send(name, email, object, message)">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name"
+                            placeholder="Il tuo nome" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email"
+                            placeholder="La tua email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="object" class="form-label">Oggetto</label>
+                        <input type="text" class="form-control" id="object" [(ngModel)]="object" name="object"
+                            placeholder="Volevo chiedere informazioni su..." required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Corpo del testo</label>
+                        <textarea type="text" class="form-control" id="message" [(ngModel)]="message" name="message"
+                            placeholder="Inizia a scrivere" required style="height: 20vh; resize: none"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger w-100 shadow-lg" style="height: 50px;"><i
+                            class="m-1 bi bi-send-fill" style="color: white; font-size: 20px"></i> Invia</button>
+                </form>
+
+                <p class="text-center mt-4 mb-0">
+                    Risponderemo il prima possibile!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center fw-bold" style="margin-top: 10vh;">Ecco dove trovarci</h1>
+    <p class="text-center mb-4">Ti forniremo tutti i dettagli per raggiungerci facilmente.</p>
+
+    <div class="row g-4 mb-4">
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm h-100 border-0 text-center p-4">
+                <i class="bi bi-geo-alt-fill mb-3" style="font-size: 2rem; color:#E53935;"></i>
+                <h5 class="fw-bold">Indirizzo</h5>
+                <p class="mb-0">Via Brennero, 6<br>38060 Calliano (TN)</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm h-100 border-0 text-center p-4">
+                <i class="bi bi-telephone-fill mb-3" style="font-size: 2rem; color:#E53935;"></i>
+                <h5 class="fw-bold">Telefono</h5>
+                <p class="mb-0"><a href="tel:+393757456420" class="text-decoration-none text-dark">+39 375 745 6420</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm h-100 border-0 text-center p-4">
+                <i class="bi bi-envelope-fill mb-3" style="font-size: 2rem; color:#E53935;"></i>
+                <h5 class="fw-bold">Email</h5>
+                <p class="mb-0"><a href="mailto:info@pizzeriadovial.it"
+                        class="text-decoration-none text-dark">info@pizzeriadovial.it</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps -->
+    <div class="row justify-content-center mt-5">
+        <div class="col-12">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11100.590521047749!2d11.074445087158203!3d45.928349100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47820b2cb9eabe47%3A0xb4d8bfb4077bad62!2sDovial%20Chesini!5e0!3m2!1sit!2sit!4v1763330547821!5m2!1sit!2sit"
+                width="100%" height="700" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="mb-5 mt-3 shadow-lg"></iframe>
+        </div>
+    </div>
+
+</div>
