@@ -1,5 +1,3 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 /*
   Component: Navbar
   File: src/app/components/navbar/navbar.ts
@@ -7,6 +5,13 @@ import { RouterLink } from '@angular/router';
 */
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+
+@Component({
+  selector: 'app-navbar',
+  imports: [RouterLink],
+  templateUrl: './navbar.html',
+  styleUrl: './navbar.css',
+})
 export class Navbar {
 
 }
