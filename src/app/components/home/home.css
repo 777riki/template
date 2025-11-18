@@ -22,7 +22,7 @@
 .brand-slider {
     width: 100%;
     overflow-x: hidden;
-    background: #fff;
+    background: #f5f5f5;
 }
 
 .brand-track {
@@ -82,4 +82,8 @@
     .brand-slide .card-text {
         font-size: 0.75rem;
     }
+}
+
+.list-group-item.bg-transparent {
+    background-color: transparent !important;
 }
