@@ -5,6 +5,7 @@ import { Chisiamo } from './components/chisiamo/chisiamo';
 import { Gallery } from './components/gallery/gallery';
 import { Contatti } from './components/contatti/contatti';
 import { Orari } from './components/orari/orari';
+import { Menu } from './components/menu/menu';
 
 export const routes: Routes = [
     {path: '', component: Home},
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path: 'chisiamo', component: Chisiamo},
     {path: 'gallery', component: Gallery},
     {path: 'contatti', component: Contatti},
-    {path: 'orari', component: Orari}
+    {path: 'orari', component: Orari},
+    {path: 'menu', component: Menu}
 ];

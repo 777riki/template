@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg shadow-lg sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand mx-4 my-2" routerLink="/">
-      <img src="/logo.png" style="height: 6vh;">
+      <img src="/logo.png" style="height: 6vh" />
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -15,19 +15,29 @@
           <a class="nav-link text-white mx-4 my-2" routerLink="/">Home</a>
         </li>
         <li class="nav-item fw-bold">
-          <a class="nav-link text-white mx-4 my-2" routerLink="/chisiamo">Chi siamo</a>
-        </li>
-        <li class="nav-item fw-bold">
-          <a class="nav-link text-white mx-4 my-2" routerLink="/servizi">Servizi</a>
+          <a class="nav-link text-white mx-4 my-2" routerLink="/menu">Menù</a>
         </li>
         <li class="nav-item fw-bold">
           <a class="nav-link text-white mx-4 my-2" routerLink="/orari">Orari di apertura</a>
         </li>
+
+        <li class="nav-item dropdown fw-bold">
+          <a class="nav-link text-white mx-4 my-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Il locale
+          </a>
+          <ul class="dropdown-menu shadow-lg">
+            <li><a class="dropdown-item" routerLink="/chisiamo">Chi siamo</a></li>
+            <li><a class="dropdown-item" routerLink="/servizi">Servizi</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" routerLink="/contatti">Contatti</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item fw-bold">
           <a class="nav-link text-white mx-4 my-2" routerLink="/gallery">Gallery</a>
-        </li>
-        <li class="nav-item fw-bold">
-          <a class="nav-link text-white mx-4 my-2" routerLink="/contatti">Contatti</a>
         </li>
       </ul>
     </div>
