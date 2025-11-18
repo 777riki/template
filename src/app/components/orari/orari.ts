@@ -1,3 +1,8 @@
+/*
+  Component: Orari
+  File: src/app/components/orari/orari.ts
+  Description: Gestisce gli orari di apertura con segnali Angular e fornisce la funzione `openNow()` usata nel template.
+*/
 import { Component, computed, signal, WritableSignal } from '@angular/core';
 
 interface OpeningHours {

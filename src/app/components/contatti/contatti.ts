@@ -1,3 +1,8 @@
+/*
+  Component: Contatti
+  File: src/app/components/contatti/contatti.ts
+  Description: Classe del componente per gestire il form di contatto e l'invio email via EmailJS.
+*/
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
