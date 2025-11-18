@@ -1,1 +1,68 @@
-<p>orari works!</p>
+<div class="container my-5 py-5">
+    <h1 class="text-center fw-bold">Orari di Apertura</h1>
+    <div class="text-center mb-5">
+        <span class="badge" [class]="openNow() ? 'bg-success' : 'bg-danger'">
+            {{ openNow() ? 'Aperto' : 'Chiuso' }}
+        </span>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-10 col-md-8">
+
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <tbody>
+                        <tr>
+                            <th class="text-start px-5 py-2" scope="row">Lunedì</th>
+                            <td class="text-end px-5 py-2">Chiuso</td>
+                        </tr>
+                        <tr>
+                            <th class="text-start px-5 py-2" scope="row">Martedì</th>
+                            <td class="text-end px-5 py-2">
+                                06:30 - 14:30<br>
+                                17:00 - 22:30
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-start px-5 py-2" scope="row">Mercoledì</th>
+                            <td class="text-end px-5 py-2">
+                                06:30 - 14:30<br>
+                                17:00 - 22:30
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-start px-5 py-2" scope="row">Giovedì</th>
+                            <td class="text-end px-5 py-2">
+                                06:30 - 14:30<br>
+                                17:00 - 22:30
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-start px-5 py-2" scope="row">Venerdì</th>
+                            <td class="text-end px-5 py-2">
+                                06:30 - 14:30<br>
+                                17:00 - 22:30
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-start px-5 py-2" scope="row">Sabato</th>
+                            <td class="text-end px-5 py-2">
+                                06:30 - 14:30<br>
+                                17:00 - 22:30
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-start px-5 py-2" scope="row">Domenica</th>
+                            <td class="text-end px-5 py-2">
+                                07:00 - 14:30<br>
+                                17:00 - 22:30
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
