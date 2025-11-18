@@ -1,1 +1,391 @@
-<p>menu works!</p>
+<div class="container my-5">
+  <h1 class="text-center fw-bold mb-4">Il nostro Menù</h1>
+
+  <!-- Pills di categoria -->
+  <ul class="nav nav-pills justify-content-center mb-5" id="menuPills" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button style="background-color: #E53935; color: white; border-radius: 20px;" class="mx-2 nav-link fw-bold active"
+        id="pizze-tab" data-bs-toggle="pill" data-bs-target="#pizze" type="button" role="tab">
+        Pizze
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button style="background-color: #E53935; color: white; border-radius: 20px;" class="mx-2 nav-link fw-bold"
+        id="antipasti-tab" data-bs-toggle="pill" data-bs-target="#antipasti" type="button" role="tab">
+        Antipasti
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button style="background-color: #E53935; color: white; border-radius: 20px;" class="mx-2 nav-link fw-bold"
+        id="primi-tab" data-bs-toggle="pill" data-bs-target="#primi" type="button" role="tab">
+        Primi
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button style="background-color: #E53935; color: white; border-radius: 20px;" class="mx-2 nav-link fw-bold"
+        id="secondi-tab" data-bs-toggle="pill" data-bs-target="#secondi" type="button" role="tab">
+        Secondi
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button style="background-color: #E53935; color: white; border-radius: 20px;" class="mx-2 nav-link fw-bold"
+        id="contorni-tab" data-bs-toggle="pill" data-bs-target="#contorni" type="button" role="tab">
+        Contorni
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button style="background-color: #E53935; color: white; border-radius: 20px;" class="mx-2 nav-link fw-bold"
+        id="bevande-tab" data-bs-toggle="pill" data-bs-target="#bevande" type="button" role="tab">
+        Bevande
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button style="background-color: #E53935; color: white; border-radius: 20px;" class="mx-2 nav-link fw-bold"
+        id="dolci-tab" data-bs-toggle="pill" data-bs-target="#dolci" type="button" role="tab">
+        Dolci
+      </button>
+    </li>
+  </ul>
+
+  <!-- Contenuto delle tab -->
+  <div class="tab-content mt-5" id="menuPillsContent">
+
+    <!-- Pizze -->
+    <div class="tab-pane fade show active" id="pizze" role="tabpanel">
+      <h2 class="fw-bold">Le classiche</h2>
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Marinara</h5>
+            <p class="mb-0 text-muted">pomodoro, aglio, olio, origano</p>
+          </div>
+          <span class="fw-bold">€6,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Margherita</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella</p>
+          </div>
+          <span class="fw-bold">€8,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Calabrese</h5>
+            <p class="mb-0 text-muted">mozzarella, aglio, olio, salame piccante, peperoncino</p>
+          </div>
+          <span class="fw-bold">€9,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Prosciutto</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto</p>
+          </div>
+          <span class="fw-bold">€9,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Prosciutto e funghi</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto, funghi</p>
+          </div>
+          <span class="fw-bold">€10,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Capricciosa</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto, funghi, carciofi</p>
+          </div>
+          <span class="fw-bold">€10,50</span>
+        </div>
+      </div>
+
+      <h2 class="fw-bold">Gourmet - base pomodoro</h2>
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Marinara</h5>
+            <p class="mb-0 text-muted">pomodoro, aglio, olio, origano</p>
+          </div>
+          <span class="fw-bold">€6,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Margherita</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella</p>
+          </div>
+          <span class="fw-bold">€8,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Calabrese</h5>
+            <p class="mb-0 text-muted">mozzarella, aglio, olio, salame piccante, peperoncino</p>
+          </div>
+          <span class="fw-bold">€9,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Prosciutto</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto</p>
+          </div>
+          <span class="fw-bold">€9,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Prosciutto e funghi</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto, funghi</p>
+          </div>
+          <span class="fw-bold">€10,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Capricciosa</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto, funghi, carciofi</p>
+          </div>
+          <span class="fw-bold">€10,50</span>
+        </div>
+      </div>
+
+      <h2 class="fw-bold">Gourmet - base mozzarella</h2>
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Marinara</h5>
+            <p class="mb-0 text-muted">pomodoro, aglio, olio, origano</p>
+          </div>
+          <span class="fw-bold">€6,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Margherita</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella</p>
+          </div>
+          <span class="fw-bold">€8,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Calabrese</h5>
+            <p class="mb-0 text-muted">mozzarella, aglio, olio, salame piccante, peperoncino</p>
+          </div>
+          <span class="fw-bold">€9,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Prosciutto</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto</p>
+          </div>
+          <span class="fw-bold">€9,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Prosciutto e funghi</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto, funghi</p>
+          </div>
+          <span class="fw-bold">€10,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Capricciosa</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto, funghi, carciofi</p>
+          </div>
+          <span class="fw-bold">€10,50</span>
+        </div>
+      </div>
+
+      <h2 class="fw-bold">Pizze baby</h2>
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Marinara</h5>
+            <p class="mb-0 text-muted">pomodoro, aglio, olio, origano</p>
+          </div>
+          <span class="fw-bold">€6,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Margherita</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella</p>
+          </div>
+          <span class="fw-bold">€8,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Calabrese</h5>
+            <p class="mb-0 text-muted">mozzarella, aglio, olio, salame piccante, peperoncino</p>
+          </div>
+          <span class="fw-bold">€9,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Prosciutto</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto</p>
+          </div>
+          <span class="fw-bold">€9,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Prosciutto e funghi</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto, funghi</p>
+          </div>
+          <span class="fw-bold">€10,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Capricciosa</h5>
+            <p class="mb-0 text-muted">pomodoro, mozzarella, prosciutto, funghi, carciofi</p>
+          </div>
+          <span class="fw-bold">€10,50</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Antipasti -->
+    <div class="tab-pane fade" id="antipasti" role="tabpanel">
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Bruschette miste</h5>
+            <p class="mb-0 text-muted">Pane tostato con pomodoro, basilico e olio EVO</p>
+          </div>
+          <span class="fw-bold">€5,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Tagliere di salumi</h5>
+            <p class="mb-0 text-muted">Salumi artigianali e formaggi locali</p>
+          </div>
+          <span class="fw-bold">€10,00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Primi -->
+    <div class="tab-pane fade" id="primi" role="tabpanel">
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Lasagna al forno</h5>
+            <p class="mb-0 text-muted">Lasagne fatte in casa con ragù e besciamella</p>
+          </div>
+          <span class="fw-bold">€8,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Gnocchi al pomodoro</h5>
+            <p class="mb-0 text-muted">Gnocchi di patate con salsa di pomodoro e basilico</p>
+          </div>
+          <span class="fw-bold">€7,50</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondi -->
+    <div class="tab-pane fade" id="secondi" role="tabpanel">
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Cotoletta alla milanese</h5>
+            <p class="mb-0 text-muted">Cotoletta di vitello con contorno di patate</p>
+          </div>
+          <span class="fw-bold">€12,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Pollo alla griglia</h5>
+            <p class="mb-0 text-muted">Petto di pollo marinato e grigliato</p>
+          </div>
+          <span class="fw-bold">€11,00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contorni -->
+    <div class="tab-pane fade" id="contorni" role="tabpanel">
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Patate al forno</h5>
+          </div>
+          <span class="fw-bold">€3,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Verdure grigliate</h5>
+          </div>
+          <span class="fw-bold">€4,00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bevande -->
+    <div class="tab-pane fade" id="bevande" role="tabpanel">
+      <h2 class="fw-bold">Bibite</h2>
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Acqua naturale/frizzante</h5>
+          </div>
+          <span class="fw-bold">€2,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Bibite</h5>
+            <p class="mb-0 text-muted">Coca-Cola, Fanta, Sprite</p>
+          </div>
+          <span class="fw-bold">€3,00</span>
+        </div>
+      </div>
+
+      <h2 class="fw-bold">Birre</h2>
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Acqua naturale/frizzante</h5>
+          </div>
+          <span class="fw-bold">€2,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Bibite</h5>
+            <p class="mb-0 text-muted">Coca-Cola, Fanta, Sprite</p>
+          </div>
+          <span class="fw-bold">€3,00</span>
+        </div>
+      </div>
+
+      <h2 class="fw-bold">Vini, bollicine, prosecco</h2>
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Acqua naturale/frizzante</h5>
+          </div>
+          <span class="fw-bold">€2,00</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Bibite</h5>
+            <p class="mb-0 text-muted">Coca-Cola, Fanta, Sprite</p>
+          </div>
+          <span class="fw-bold">€3,00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dolci -->
+    <div class="tab-pane fade" id="dolci" role="tabpanel">
+      <div class="list-group mb-5">
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Tiramisù</h5>
+          </div>
+          <span class="fw-bold">€4,50</span>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="fw-bold mb-1">Panna Cotta</h5>
+          </div>
+          <span class="fw-bold">€4,00</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

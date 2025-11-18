@@ -2,7 +2,7 @@
     position: relative;
     height: 80vh;
     min-height: 650px;
-    background: url('/carousel3.jpg') center/cover no-repeat;
+    background: url('/home/ristorante.jpg') center/cover no-repeat;
 }
 
 .hero-section::before {
