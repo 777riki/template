@@ -1,18 +1,23 @@
-#heroCarousel .carousel-caption {
-    bottom: 5%;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+.hero-section {
+    position: relative;
+    height: 80vh;
+    min-height: 650px;
+    background: url('/carousel3.jpg') center/cover no-repeat;
 }
 
-@media (min-width: 768px) {
-    #heroCarousel .carousel-caption h2 {
-        font-size: 2.5rem;
-    }
-
-    #heroCarousel .carousel-caption p {
-        font-size: 1.25rem;
-    }
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+    backdrop-filter: blur(1px);
 }
 
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    z-index: 2;
+}
 
 .brand-slider {
     width: 100%;
@@ -32,7 +37,7 @@
 }
 
 .brand-slide img {
-    height: 180px;
+    height: 230px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -49,6 +54,7 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-124%);
     }
@@ -58,8 +64,9 @@
     .brand-slide {
         width: 220px;
     }
+
     .brand-slide img {
-        height: 140px;
+        height: 200px;
     }
 }
 
@@ -67,9 +74,11 @@
     .brand-slide {
         width: 160px;
     }
+
     .brand-slide img {
-        height: 100px;
+        height: 170px;
     }
+
     .brand-slide .card-text {
         font-size: 0.75rem;
     }
