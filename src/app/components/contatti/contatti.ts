@@ -3,7 +3,7 @@
   File: src/app/components/contatti/contatti.ts
   Description: Classe del componente per gestire il form di contatto e l'invio email via EmailJS.
 */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 
@@ -13,7 +13,11 @@ import emailjs from '@emailjs/browser';
   templateUrl: './contatti.html',
   styleUrls: ['./contatti.css'],
 })
-export class Contatti {
+export class Contatti implements OnInit {
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 
   name: string = '';
   email: string = '';

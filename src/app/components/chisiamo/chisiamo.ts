@@ -4,7 +4,7 @@
   Description: Classe del componente Angular per la pagina "Chi Siamo".
   Note: Questo file definisce il selettore e i riferimenti a template e stile.
 */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-chisiamo',
@@ -12,6 +12,10 @@ import { Component } from '@angular/core';
   templateUrl: './chisiamo.html',
   styleUrl: './chisiamo.css',
 })
-export class Chisiamo {
+export class Chisiamo implements OnInit {
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 
 }

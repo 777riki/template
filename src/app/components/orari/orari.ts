@@ -3,7 +3,7 @@
   File: src/app/components/orari/orari.ts
   Description: Gestisce gli orari di apertura con segnali Angular e fornisce la funzione `openNow()` usata nel template.
 */
-import { Component, computed, signal, WritableSignal } from '@angular/core';
+import { Component, computed, OnInit, signal, WritableSignal } from '@angular/core';
 
 interface OpeningHours {
   day: number; 
@@ -15,7 +15,11 @@ interface OpeningHours {
   templateUrl: './orari.html',
   styleUrls: ['./orari.css'],
 })
-export class Orari {
+export class Orari implements OnInit {
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 
   // Orari settimanali
   openingHours = signal<OpeningHours[]>([

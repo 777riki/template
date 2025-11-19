@@ -4,7 +4,7 @@
   File: src/app/components/menu/menu.ts
   Description: Componente per la pagina del menù; attualmente struttura statica in HTML.
 */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -12,6 +12,10 @@ import { Component } from '@angular/core';
   templateUrl: './menu.html',
   styleUrl: './menu.css',
 })
-export class Menu {
+export class Menu implements OnInit {
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 
 }

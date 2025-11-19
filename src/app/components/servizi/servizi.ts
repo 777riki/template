@@ -3,7 +3,7 @@
   File: src/app/components/servizi/servizi.ts
   Description: Classe componente per la pagina dei servizi; contiene solo metadata per template e stile.
 */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-servizi',
@@ -11,6 +11,10 @@ import { Component } from '@angular/core';
   templateUrl: './servizi.html',
   styleUrl: './servizi.css',
 })
-export class Servizi {
+export class Servizi implements OnInit{
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 
 }

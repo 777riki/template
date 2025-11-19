@@ -1,88 +1,92 @@
+#handleHover:hover {
+  cursor: pointer;
+}
+
 .hero-section {
-    position: relative;
-    height: 80vh;
-    background: url('/home/ristorante.jpg') center/cover no-repeat;
+  position: relative;
+  height: 80vh;
+  background: url('/home/ristorante.jpg') center/cover no-repeat;
 }
 
 .hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.48);
-    backdrop-filter: blur(1px);
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(1px);
 }
 
 .hero-content {
-    position: relative;
-    max-width: 800px;
-    z-index: 2;
+  position: relative;
+  max-width: 800px;
+  z-index: 2;
 }
 
 .brand-slider {
-    width: 100%;
-    overflow-x: hidden;
-    background: #f5f5f5;
+  width: 100%;
+  overflow-x: hidden;
+  background: #f5f5f5;
 }
 
 .brand-track {
-    display: flex;
-    gap: 1.5rem;
-    animation: scrollBrands 20s linear infinite;
+  display: flex;
+  gap: 1.5rem;
+  animation: scrollBrands 20s linear infinite;
 }
 
 .brand-slide {
-    flex: 0 0 auto;
-    width: 280px;
+  flex: 0 0 auto;
+  width: 280px;
 }
 
 .brand-slide img {
-    height: 230px;
-    object-fit: cover;
-    border-radius: 10px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .brand-slide .card-body {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .brand-slide .card-text {
-    font-size: 0.85rem;
+  font-size: 0.85rem;
 }
 
 @keyframes scrollBrands {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-124%);
-    }
+  100% {
+    transform: translateX(-124%);
+  }
 }
 
 @media (max-width: 992px) {
-    .brand-slide {
-        width: 220px;
-    }
+  .brand-slide {
+    width: 220px;
+  }
 
-    .brand-slide img {
-        height: 200px;
-    }
+  .brand-slide img {
+    height: 200px;
+  }
 }
 
 @media (max-width: 576px) {
-    .brand-slide {
-        width: 160px;
-    }
+  .brand-slide {
+    width: 160px;
+  }
 
-    .brand-slide img {
-        height: 170px;
-    }
+  .brand-slide img {
+    height: 170px;
+  }
 
-    .brand-slide .card-text {
-        font-size: 0.75rem;
-    }
+  .brand-slide .card-text {
+    font-size: 0.75rem;
+  }
 }
 
 .list-group-item.bg-transparent {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }

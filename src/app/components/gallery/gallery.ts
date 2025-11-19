@@ -3,7 +3,7 @@
   File: src/app/components/gallery/gallery.ts
   Description: Componente della gallery (placeholder). Implementare logica/markup per le immagini.
 */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
@@ -11,6 +11,10 @@ import { Component } from '@angular/core';
   templateUrl: './gallery.html',
   styleUrl: './gallery.css',
 })
-export class Gallery {
+export class Gallery implements OnInit {
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 
 }
